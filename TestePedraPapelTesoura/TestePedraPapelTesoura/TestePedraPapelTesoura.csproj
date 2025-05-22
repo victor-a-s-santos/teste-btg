@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Strategies\IComparacaoTesouraPedra.cs\**" />
+      <Compile Remove="Strategies\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Strategies\IComparacaoTesouraPedra.cs\**" />
+      <EmbeddedResource Remove="Strategies\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Strategies\IComparacaoTesouraPedra.cs\**" />
+      <None Remove="Strategies\**" />
+    </ItemGroup>
+
+</Project>
